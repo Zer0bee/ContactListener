@@ -175,7 +175,7 @@ public class ContactHelper {
 
         List<Integer> addedContacts;
         if (sizeOfAdditions > 0) {
-            addedContacts = new ArrayList<>(sizeOfDeletions);
+            addedContacts = new ArrayList<>(sizeOfAdditions);
             for (String data : additions) {
                 String[] datums = data.split(delimiter, 2);
                 int addedEvent = Integer.parseInt(datums[0]);
